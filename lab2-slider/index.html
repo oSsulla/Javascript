@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
   <h1>Slider</h1>
-    <div id="slider">
-        <div class="slides">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
+        <div class="Slider">
+            <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="http://picsum.photos/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="http://picsum.photos/601/401" alt=""></div>
+                <div class="swiper-slide"><img src="http://picsum.photos/602/402" alt=""></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+  
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-    </div>
     <main>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 

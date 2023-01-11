@@ -1,24 +1,17 @@
-// notatnik z zajęć
-const main = document.querySelector('main')
-const timeoutRef = setTimeout( 
-    () => {
-        main.innerHTML='From setTimeout'
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
     },
-    2000
-)
-let licznik = 0 
-const intervalRef = setInterval( 
-    () => {
-        main.innerHTML='From interval' + licznik++
-    },
-    4000
-)
+loop: true,
 
-// kasujemy setInterval
-clearInterval(intervalRef)
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
 
-// kasujemy setTimeout
-clearTimeout(intervalRef)
-
-
-// window.requestAnimationFrame
+navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+});

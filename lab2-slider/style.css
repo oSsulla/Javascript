@@ -15,25 +15,27 @@ h1 {
   text-align: center;
   font-weight: 300;
 }
-#slider {
-  width: 600px;
-  height: 400px;
-  margin: 100px auto 0 auto;
-  overflow: hidden;
-}
-#slider .slides {
+.Slider {
+  width: 100%;
+  height: 80vh;
+  background: #222;
   display: flex;
-  animation-name: pociag-w-lewo;
-  animation-duration: 4s;
-  animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes pociag-w-lewo {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-2000px);
-  }
+.swiper {
+  width: 50%;
+  border: #fff;
+  border-style: ridge;
+  height: fit-content;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+  color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+  background: #fff;
 }
