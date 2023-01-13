@@ -1,41 +1,85 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-
-html {
-  border-top: 5px solid #fff;
-  background: #000000;
-  color: #000000;
-}
-html, body {
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Open Sans';
-}
-h1 {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
-}
-.Slider {
-  width: 100%;
-  height: 80vh;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   background: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.swiper {
-  width: 50%;
-  border: #fff;
-  border-style: ridge;
-  height: fit-content;
+
+h1 {
+  text-align: center;
+  color: #eee;
+  font-family: "Roboto Thin", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
-.swiper-slide img{
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides-container {
+  height: 500px;
+  transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+  position: relative;
+}
+
+.slide-image {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
-.swiper .swiper-button-prev, .swiper .swiper-button-next{
-  color: #fff;
+
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.swiper .swiper-pagination-bullet-active{
-  background: #fff;
+
+.next-btn, .prev-btn {
+  background: #eee;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  cursor: pointer;
+  transform: 400ms;
+}
+
+.next-btn:hover, .prev-btn:hover {
+  background: #48f0ff;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.navigation-dots {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.single-dot {
+  background: #333;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  transform: 400ms;
+}
+
+.single-dot.active {
+  background: #eee;
 }
