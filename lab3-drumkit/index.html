@@ -8,42 +8,71 @@
     
 </head>
 <body>
-<div class="sounds">
-    <div data-note="s1" class="sound clap">1</div>
-    <div data-note="s2" class="sound hihat">2</div>
-    <div data-note="s3" class="sound kick">3</div>
-    <div data-note="s4" class="sound openhat">4</div>
-    <div data-note="s5" class="sound boom">5</div>
-    <div data-note="s6" class="sound ride">6</div>
-    <div data-note="s7" class="sound snare">7</div>
-    <div data-note="s8" class="sound tom">8</div>
-    <div data-note="s9" class="sound tink">9</div>
+<div class="drumkit">
+    <div class="sounds">
+        <div data-note="s1" class="sound clap">
+            <kbd>1</kbd>
+            <span class="key">clap</span>
+        </div>
+        <div data-note="s2" class="sound hihat">
+            <kbd>2</kbd>
+            <span class="key">hihat</span>
+        </div>
+        <div data-note="s3" class="sound kick">
+            <kbd>3</kbd>
+            <span class="key">kick</span>
+        </div>
+        <div data-note="s4" class="sound openhat">
+            <kbd>4</kbd>
+            <span class="key">openhat</span>
+        </div>
+        <div data-note="s5" class="sound boom">
+            <kbd>5</kbd>
+            <span class="key">boom</span>
+        </div>
+        <div data-note="s6" class="sound ride">
+            <kbd>6</kbd>
+            <span class="key">ride</span>
+        </div>
+        <div data-note="s7" class="sound snare">
+            <kbd>7</kbd>
+            <span class="key">snare</span>
+        </div>
+        <div data-note="s8" class="sound tom">
+            <kbd>8</kbd>
+            <span class="key">tom</span>
+        </div>
+        <div data-note="s9" class="sound tink">
+            <kbd>9</kbd>
+            <span class="key">tink</span>
+        </div>
+    </div>
 </div>
-<audio src="./sounds/boom.wav" id="s1"></audio>
-<audio src="./sounds/clap.wav"  id="s2"></audio>   
-<audio src="./sounds/hihat.wav"  id="s3"></audio>
-<audio src="./sounds/kick.wav"  id="s4"></audio>
-<audio src="./sounds/openhat.wav"  id="s5"></audio>
+<audio src="./sounds/clap.wav" id="s1"></audio>
+<audio src="./sounds/hihat.wav"  id="s2"></audio>   
+<audio src="./sounds/kick.wav"  id="s3"></audio>
+<audio src="./sounds/openhat.wav"  id="s4"></audio>
+<audio src="./sounds/boom.wav"  id="s5"></audio>
 <audio src="./sounds/ride.wav"  id="s6"></audio>
 <audio src="./sounds/snare.wav"  id="s7"></audio>
-<audio src="./sounds/tink.wav"  id="s8"></audio>
-<audio src="./sounds/tom.wav"  id="s9"></audio>
+<audio src="./sounds/tom.wav"  id="s8"></audio>
+<audio src="./sounds/tink.wav"  id="s9"></audio>
    
 <div class="records">
         <div class="record">
-            <button class="btn play-btn">Play</button>
-            <button class="btn stop-btn">save</button>   
-            <button class="btn record-btn">Record</button>
-        </div>
-        <div  class="record">
-            Record 1:
-            <button data-note="t1"class="btn track-btn">V</button>
+            <button class="btn play-btn">Odtwórz</button>
+            <button class="btn stop-btn">Zapisz</button>   
+            <button class="btn record-btn">Nagraj</button>
         </div>
         <div class="record">
-            Record 2:
-            <button data-note="t2" class="btn track-btn">V</button>
+            Nagranie 1:
+            <button data-note="t1"class="btn track-btn">X</button>
         </div>
-        <button class="btn add-btn">add</button>
+        <div class="record">
+            Nagranie 2:
+            <button data-note="t2" class="btn track-btn">X</button>
+        </div>
+        <!-- <button class="btn add-btn">add</button> -->
     </body> 
     <script src="drumkit.js"></script>
 </html>
