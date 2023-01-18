@@ -11,7 +11,7 @@ let currentSlide = 0;
 // SLIDER
 
 function init() {
-
+  
   slideImage.forEach((img, i) => {
     img.style.left = i * 100 + "%";
   });
@@ -74,7 +74,7 @@ function goToSlide(slideNumber) {
   setActiveClass();
 }
 
-// AKTYWNA KLASA
+// AKTYWNA KLASA 
 
 function setActiveClass() {
 
