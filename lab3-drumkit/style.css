@@ -1,10 +1,21 @@
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
     font-size: 24px;
     background-color: #444;
 }
+
+.drumkit h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
 .sounds {
     display: flex;
     align-items: center;
@@ -14,6 +25,7 @@ body {
     gap: 3px;
     margin: 1rem;
 }
+
 .sound {
     border: .4rem solid rgba(0, 0, 0, 0.24);
     border-radius: .5rem;
@@ -26,16 +38,19 @@ body {
     text-align: center;
     background: rgba(58, 53, 53, 0.4);
 }
+
 .key {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
 }
+
 kbd {
     display: block;
     font-size: 4rem;
 }
+
 .records {
     display: flex;
     justify-content: center;
@@ -44,6 +59,7 @@ kbd {
     gap: 15px; 
     transform: translate(0, 65px)
 }
+
 .record {
     width: 20vw;
     height: 4vw;
@@ -55,7 +71,8 @@ kbd {
     background: rgba(255, 219, 121, 0.2); 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 10px 15px;
     font-size: 12px;
@@ -69,15 +86,18 @@ kbd {
     border-radius: 8px;
     box-shadow: 0 8px #5c4700;
 }
-.add-btn{
+
+.add-btn {
     background-color: rgb(177, 255, 94);
 }
-.active{
+
+.active {
     background-color: #ffc600;
     box-shadow: 0 0 1rem #ffc600;
     transform: scale(1.1);
 }
-.activeGreen{
+
+.activeGreen {
     background-color: rgb(177, 255, 94);
     box-shadow: 0 3px #5c4700;
     transform: translateY(4px);
